@@ -89,7 +89,7 @@ export const reviews = [
   { id: 3, author: "Denis", avatar: "Д", rating: 4, text: "Красивый пак, хотелось бы ещё пару пресетов.", date: "12 дней назад" },
 ];
 
-export const purchases = [mods[0], mods[2]];
+export const purchases = mods.filter((mod) => ["neon-drift", "police-pursuit"].includes(mod.id));
 
 export function formatPrice(price: number) {
   return price === 0 ? "Бесплатно" : `${price.toLocaleString("ru-RU")} ₽`;
