@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep marketplace demo content in `src/lib/marketplace-data.ts` and access it through hooks so a future API can replace the data source without changing page UI.
